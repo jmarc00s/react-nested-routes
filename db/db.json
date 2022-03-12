@@ -22,7 +22,13 @@
             "id": 1,
             "brandId": 1,
             "name": "Africa Twin",
-            "imageUrl": "https://motonewsbrasil.com/wp-content/uploads/2019/07/honda-africa-twin-adventure-sports-2020-7.jpg"
+            "imageUrl": "https://motonewsbrasil.com/wp-content/uploads/2019/07/honda-africa-twin-adventure-sports-2020-7.jpg",
+            "details": {
+                "power": "99,3 cv a 7.500 rpm",
+                "torque": "10,5 kgf.m a 6000 rpm",
+                "fuelCapacity": "18.8l",
+                "displacment": "1082.96cc"
+            }            
         },
         {
             "id": 2,

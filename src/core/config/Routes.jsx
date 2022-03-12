@@ -11,6 +11,10 @@ const EmptyDetails = React.lazy(() =>
   import('../../components/pages/Motorcycles/EmptyDetails')
 );
 
+const MotorcycleDetails = React.lazy(() =>
+  import('../../components/pages/Motorcycles/MotorcycleDetail')
+);
+
 const LazyLoadedRoute = ({ component }) => {
   return (
     <React.Suspense fallback={<>Carregando...</>}>{component}</React.Suspense>
@@ -32,6 +36,10 @@ const AppRouter = () => {
         >
           <Route index element={<EmptyDetails />} />
           <Route path=":brandId/list" element={<MotorcycleList />} />
+          <Route
+            path=":motorcycleId/details"
+            element={<LazyLoadedRoute component={<MotorcycleDetails />} />}
+          />
         </Route>
       </Route>
     </Routes>
