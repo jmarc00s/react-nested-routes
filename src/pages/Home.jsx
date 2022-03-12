@@ -1,20 +1,24 @@
 import React from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
 import List from '../components/list/List';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="d-flex flex-column pt-5">
-      <div className="row">
-        <div className="col-sm-3 border-right">
-          <List>
-            <List.Item>Item 1</List.Item>
-            <List.Item>Item 2</List.Item>
-            <List.Item>Item 3</List.Item>
-            <List.Item>Item 4</List.Item>
-            <List.Item>Item 5</List.Item>
-          </List>
-        </div>
-        <div className="col-sm-9">Details</div>
+      <div className="jumbotron">
+        <h1 className="display-4">MotorcycleWiki</h1>
+        <p className="lead">
+          Wiki de motos para testar nested routes usando react-router-dom.
+        </p>
+        <hr />
+        <button
+          className="btn btn-primary"
+          onClick={() => navigate('/motorcycles')}
+        >
+          Acessar wiki
+        </button>
       </div>
     </section>
   );

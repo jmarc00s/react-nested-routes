@@ -1,18 +1,32 @@
 import React from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 
-const Navbar = () => (
-  <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
-    <div className="container-fluid">
-      <a className="navbar-brand">React nested routes</a>
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            Home
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-);
+const Navbar = () => {
+  const navigate = useNavigate();
+
+  const goToHome = () => navigate('/');
+
+  return (
+    <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
+      <div className="container-fluid">
+        <NavLink to="/" className="navbar-brand">
+          MotoWiki
+        </NavLink>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <NavLink to="/" className="nav-link">
+              Início
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/motorcycles" className="nav-link">
+              Motos
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

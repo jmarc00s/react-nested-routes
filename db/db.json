@@ -1,0 +1,83 @@
+{
+    "brands": [
+        {
+            "id": 1,
+            "name": "Honda"
+        },
+        {
+            "id": 2,
+            "name": "Yamaha"
+        },
+        {
+            "id": 3,
+            "name": "Kawasaki"
+        },
+        {
+            "id": 4,
+            "name": "Triumph"
+        }
+    ],
+    "motorcycle": [
+        {
+            "id": 1,
+            "brandId": 1,
+            "name": "Africa Twin"
+        },
+        {
+            "id": 2,
+            "brandId": 1,
+            "name": "CB 500x"
+        },
+        {
+            "id": 3,
+            "brandId": 1,
+            "name": "NC 750x"
+        },
+        {
+            "id": 4,
+            "brandId": 2,
+            "name": "MT-03"
+        },
+        {
+            "id": 5,
+            "brandId": 2,
+            "name": "MT-07"
+        },
+        {
+            "id": 6,
+            "brandId": 2,
+            "name": "Teneré 700"
+        },
+        {
+            "id": 7,
+            "brandId": 3,
+            "name": "Z-400"
+        },
+        {
+            "id": 8,
+            "brandId": 3,
+            "name": "Z-900 RS"
+        },
+        {
+            "id": 9,
+            "brandId": 3,
+            "name": "Versys 300x"
+        },
+        {
+            "id": 10,
+            "brandId": 4,
+            "name": "Trident"
+        },
+        {
+            "id": 11,
+            "brandId": 4,
+            "name": "Street Twin"
+        },
+        {
+            "id": 12,
+            "brandId": 4,
+            "name": "Street Scrambler"
+        }
+
+    ]
+}

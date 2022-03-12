@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import EmptyDetails from '../../components/pages/home/EmptyDetails';
+import List from '../../components/pages/home/List';
 import Layout from '../../components/template/Layout';
+import Motorcycles from '../../pages/Motorcycles';
 
 const Home = React.lazy(() => import('../../pages/Home'));
 
@@ -18,6 +21,11 @@ const AppRouter = () => {
           path="/"
           index
           element={<LazyLoadedRoute component={<Home />} />}
+        />
+        <Route
+          path="/motorcycles"
+          index
+          element={<LazyLoadedRoute component={<Motorcycles />} />}
         />
       </Route>
     </Routes>

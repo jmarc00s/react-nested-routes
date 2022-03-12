@@ -6,9 +6,12 @@ const List = ({ children }) => {
   return <ul className="list-unstyled p-1 border-right">{children}</ul>;
 };
 
-const ListItem = ({ children }) => {
+const ListItem = ({ children, onClick }) => {
   return (
-    <li className={classNames('px-2 py-4 border-bottom', style['list-item'])}>
+    <li
+      onClick={onClick}
+      className={classNames('px-2 py-4 border-bottom', style['list-item'])}
+    >
       {children}
     </li>
   );
