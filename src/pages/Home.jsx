@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="d-flex flex-column pt-5">
+    <section className="d-flex flex-column">
       <div className="jumbotron">
         <h1 className="display-4">MotorcycleWiki</h1>
         <p className="lead">

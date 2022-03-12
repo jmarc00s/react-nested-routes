@@ -3,7 +3,11 @@ import React from 'react';
 import style from './list.module.css';
 
 const List = ({ children }) => {
-  return <ul className="list-unstyled p-1 border-right">{children}</ul>;
+  return (
+    <ul className="list-unstyled p-1 border-end" style={{ minWidth: 200 }}>
+      {children}
+    </ul>
+  );
 };
 
 const ListItem = ({ children, onClick }) => {

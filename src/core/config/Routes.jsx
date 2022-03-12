@@ -1,11 +1,15 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import EmptyDetails from '../../components/pages/home/EmptyDetails';
-import List from '../../components/pages/home/List';
 import Layout from '../../components/template/Layout';
-import Motorcycles from '../../pages/Motorcycles';
 
 const Home = React.lazy(() => import('../../pages/Home'));
+const Motorcycles = React.lazy(() => import('../../pages/Motorcycles'));
+const MotorcycleList = React.lazy(() =>
+  import('../../components/pages/Motorcycles/MotorcycleList')
+);
+const EmptyDetails = React.lazy(() =>
+  import('../../components/pages/Motorcycles/EmptyDetails')
+);
 
 const LazyLoadedRoute = ({ component }) => {
   return (
@@ -24,9 +28,11 @@ const AppRouter = () => {
         />
         <Route
           path="/motorcycles"
-          index
           element={<LazyLoadedRoute component={<Motorcycles />} />}
-        />
+        >
+          <Route index element={<EmptyDetails />} />
+          <Route path=":brandId/list" element={<MotorcycleList />} />
+        </Route>
       </Route>
     </Routes>
   );

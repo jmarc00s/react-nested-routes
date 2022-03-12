@@ -17,66 +17,78 @@
             "name": "Triumph"
         }
     ],
-    "motorcycle": [
+    "motorcycles": [
         {
             "id": 1,
             "brandId": 1,
-            "name": "Africa Twin"
+            "name": "Africa Twin",
+            "imageUrl": "https://motonewsbrasil.com/wp-content/uploads/2019/07/honda-africa-twin-adventure-sports-2020-7.jpg"
         },
         {
             "id": 2,
             "brandId": 1,
-            "name": "CB 500x"
+            "name": "CB 500x",
+            "imageUrl": "https://www.cabralmotor.com.br/wp-content/uploads/Honda_500X_vermelha.png"
         },
         {
             "id": 3,
             "brandId": 1,
-            "name": "NC 750x"
+            "name": "NC 750x",
+            "imageUrl": "https://motonewsbrasil.com/wp-content/uploads/2020/11/honda-nc-750x-2021-europa-4.jpg"
         },
         {
             "id": 4,
             "brandId": 2,
-            "name": "MT-03"
+            "name": "MT-03",
+            "imageUrl": "https://s2.glbimg.com/CF5aeOB6ORFmboZ_OOHb5nqLSqE=/829x206:3305x2147/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/8/G/PtlPMERvqAGCCBXkuU9w/2020-yam-mt320-eu-dpbmc-stu-001-03-71594.jpg"
         },
         {
             "id": 5,
             "brandId": 2,
-            "name": "MT-07"
+            "name": "MT-07",
+            "imageUrl": "https://motonewsbrasil.com/wp-content/uploads/2021/11/2022-yamaha-mt-07-cyan-storm-front-right.jpg"
         },
         {
             "id": 6,
             "brandId": 2,
-            "name": "Teneré 700"
+            "name": "Teneré 700",
+            "imageUrl": "https://cdn.motor1.com/images/mgl/zxgVBK/s1/4x3/2022-yamaha-tenere-700---yamaha-team-blue.webp"
         },
         {
             "id": 7,
             "brandId": 3,
-            "name": "Z-400"
+            "name": "Z-400",
+            "imageUrl": "https://content2.kawasaki.com/ContentStorage/KMB/ProductTrimGroup/72/13848c1e-3054-4aed-91c5-fd302d2da4fe.jpg?w=750"
         },
         {
             "id": 8,
             "brandId": 3,
-            "name": "Z-900 RS"
+            "name": "Z-900 RS",
+            "imageUrl": "https://media.motociclismoonline.com.br/uploads/2021/06/2022-kawasaki-z900-rs-motociclismoonline.jpg"
         },
         {
             "id": 9,
             "brandId": 3,
-            "name": "Versys 300x"
+            "name": "Versys x300",
+            "imageUrl": "https://kawasaki.m3parts.com.br/arquivos/1569438378_19kle300c_44sbk1drs2cg_a_br.jpg"
         },
         {
             "id": 10,
             "brandId": 4,
-            "name": "Trident"
+            "name": "Trident",
+            "imageUrl": "https://images.triumphmotorcycles.co.uk/media-library/images/motorcycles/roadsters-supersports/my21/trident/family%20page%20images/trident-660-family-promo-955x537.jpg"
         },
         {
             "id": 11,
             "brandId": 4,
-            "name": "Street Twin"
+            "name": "Street Twin",
+            "imageUrl": "https://www.tripletriumph.com.br/wp-content/uploads/motos-street-cinza.jpg"
         },
         {
             "id": 12,
             "brandId": 4,
-            "name": "Street Scrambler"
+            "name": "Street Scrambler",
+            "imageUrl": "https://www.tripletriumph.com.br/wp-content/uploads/street-branca.jpg"
         }
 
     ]

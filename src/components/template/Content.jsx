@@ -5,7 +5,7 @@ import Container from '../Container';
 const Content = () => {
   return (
     <section>
-      <Container>
+      <Container className="pt-5">
         <Outlet />
       </Container>
     </section>
