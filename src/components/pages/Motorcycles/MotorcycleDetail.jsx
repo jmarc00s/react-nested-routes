@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import api from '../../../core/services/api';
 
 const MotorcycleDetail = () => {
@@ -21,6 +21,9 @@ const MotorcycleDetail = () => {
         <img className="img-fluid" src={motorcycle?.imageUrl} alt="details." />
       </div>
       <div className="col-sm-6">
+        <NavLink to={`/motorcycles/${motorcycle?.brandId}/list`}>
+          Voltar
+        </NavLink>
         <table className="table table-striped table-bordered">
           <thead className="table-dark">
             <tr>

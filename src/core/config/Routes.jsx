@@ -15,6 +15,8 @@ const MotorcycleDetails = React.lazy(() =>
   import('../../components/pages/Motorcycles/MotorcycleDetail')
 );
 
+const NotFound = React.lazy(() => import('../../pages/NotFound'));
+
 const LazyLoadedRoute = ({ component }) => {
   return (
     <React.Suspense fallback={<>Carregando...</>}>{component}</React.Suspense>
@@ -24,6 +26,7 @@ const LazyLoadedRoute = ({ component }) => {
 const AppRouter = () => {
   return (
     <Routes>
+      <Route path="*" element={<LazyLoadedRoute component={<NotFound />} />} />
       <Route path="/" element={<Layout />}>
         <Route
           path="/"
