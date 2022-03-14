@@ -1,13 +1,24 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import useDebounce from '../../core/hooks/useDebounce';
 
 const NavbarSearch = ({ onValueChange }) => {
-  const [value, setValue] = React.useState('');
+  const [displayedValue, setDisplayedValue] = React.useState('');
   const debounceValueChanges = useDebounce(onValueChange);
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    if (!pathname.includes('search')) {
+      setDisplayedValue('');
+    }
+  }, [pathname]);
 
   function handleValueChanges(value) {
-    debounceValueChanges(value);
-    setValue(value);
+    if (value) {
+      debounceValueChanges(value);
+    }
+
+    setDisplayedValue(value);
   }
 
   return (
@@ -18,7 +29,7 @@ const NavbarSearch = ({ onValueChange }) => {
         className="form-control"
         placeholder="Pesquisar..."
         aria-label="Pesquisar..."
-        value={value}
+        value={displayedValue}
         onChange={({ target }) => handleValueChanges(target.value)}
       />
     </div>

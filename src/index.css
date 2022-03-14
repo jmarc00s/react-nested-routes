@@ -19,3 +19,11 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.grid-cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gap-1 {
+  gap: 1rem;
+}

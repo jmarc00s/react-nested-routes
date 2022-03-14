@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import List from '../components/list/List';
+import PageHeader from '../components/PageHeader';
 import api from '../core/services/api';
 
 const Motorcycles = () => {
@@ -21,7 +22,7 @@ const Motorcycles = () => {
 
   return (
     <section className="d-flex flex-column">
-      <h2>Motos</h2>
+      <PageHeader title="Motos" />
       <div className="d-flex">
         <List>
           {brands?.map((brand) => (
