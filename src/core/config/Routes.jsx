@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Layout from '../../components/template/Layout';
+import LazyLoadedRoute from './LazyLoadedRoute';
 
 const Home = React.lazy(() => import('../../pages/Home'));
 const Motorcycles = React.lazy(() => import('../../pages/Motorcycles'));
@@ -15,13 +16,9 @@ const MotorcycleDetails = React.lazy(() =>
   import('../../components/pages/Motorcycles/MotorcycleDetail')
 );
 
-const NotFound = React.lazy(() => import('../../pages/NotFound'));
+const Search = React.lazy(() => import('../../pages/Search'));
 
-const LazyLoadedRoute = ({ component }) => {
-  return (
-    <React.Suspense fallback={<>Carregando...</>}>{component}</React.Suspense>
-  );
-};
+const NotFound = React.lazy(() => import('../../pages/NotFound'));
 
 const AppRouter = () => {
   return (
@@ -44,6 +41,10 @@ const AppRouter = () => {
             element={<LazyLoadedRoute component={<MotorcycleDetails />} />}
           />
         </Route>
+        <Route
+          path="/search"
+          element={<LazyLoadedRoute component={<Search />} />}
+        />
       </Route>
     </Routes>
   );
