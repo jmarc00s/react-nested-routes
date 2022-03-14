@@ -17,10 +17,10 @@ const MotorcycleDetail = () => {
 
   return (
     <div className="row">
-      <div className="col-sm-6">
+      <div className="col-md-6">
         <img className="img-fluid" src={motorcycle?.imageUrl} alt="details." />
       </div>
-      <div className="col-sm-6">
+      <div className="col-md-6">
         <NavLink to={`/motorcycles/${motorcycle?.brandId}/list`}>
           Voltar
         </NavLink>

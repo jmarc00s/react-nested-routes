@@ -4,7 +4,7 @@ import Search from '../../../assets/search.svg?component';
 const EmptyDetails = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center h-full">
-      <Search />
+      <Search style={{ maxWidth: '100%' }} />
       <p className="mt-3">(Selecione uma marca para var a listagem de motos)</p>
     </div>
   );

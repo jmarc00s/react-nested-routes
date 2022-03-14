@@ -21,17 +21,20 @@ const Motorcycles = () => {
   }
 
   return (
-    <section className="d-flex flex-column">
+    <section>
       <PageHeader title="Motos" />
-      <div className="d-flex">
-        <List>
-          {brands?.map((brand) => (
-            <List.Item key={brand.id} onClick={() => handleBrandClick(brand)}>
-              {brand.name}
-            </List.Item>
-          ))}
-        </List>
-        <div className="flex-fill px-2">
+      <div className="row">
+        <div className="col-md-3 ">
+          <List>
+            {brands?.map((brand) => (
+              <List.Item key={brand.id} onClick={() => handleBrandClick(brand)}>
+                {brand.name}
+              </List.Item>
+            ))}
+          </List>
+        </div>
+
+        <div className="col-md-9 px-2">
           <Outlet />
         </div>
       </div>

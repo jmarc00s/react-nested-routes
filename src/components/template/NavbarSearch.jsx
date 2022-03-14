@@ -1,6 +1,8 @@
+import classNames from 'classnames';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import useDebounce from '../../core/hooks/useDebounce';
+import styles from './NavbarSearch.module.css';
 
 const NavbarSearch = ({ onValueChange }) => {
   const [displayedValue, setDisplayedValue] = React.useState('');
@@ -24,9 +26,8 @@ const NavbarSearch = ({ onValueChange }) => {
   return (
     <div className="input-group">
       <input
-        style={{ minWidth: 400 }}
         type="text"
-        className="form-control"
+        className={classNames(`form-control`, styles.searchInput)}
         placeholder="Pesquisar..."
         aria-label="Pesquisar..."
         value={displayedValue}

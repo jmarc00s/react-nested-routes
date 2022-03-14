@@ -6,3 +6,16 @@
 .list-item:hover {
   background-color: #eee;
 }
+
+@media screen and (min-width: 568px) {
+  .list-item {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .list {
+    display: flex;
+    overflow: auto;
+  }
+}
