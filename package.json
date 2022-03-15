@@ -8,7 +8,9 @@
     "preview": "vite preview",
     "backend:serve": "json-server db/db.json --watch -p 4000",
     "all": "concurrently \"npm run dev\" \"npm run backend:serve\"",
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "test:watch": "jest --env=jsdom --watch",
+    "test:coverage": "jest --env=jsdom --coverage"
   },
   "dependencies": {
     "axios": "^0.26.1",
