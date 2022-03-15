@@ -26,8 +26,19 @@ describe('CardComponent', () => {
       </Card>
     );
 
-    const cardTitle = screen.getByText('Test');
-    console.log(cardTitle);
+    const cardTitle = screen.getByRole('heading', { name: 'Test' });
     expect(cardTitle).toBeTruthy();
+  });
+
+  it('should render card image', () => {
+    const src = 'img/img.png';
+    const alt = 'Test';
+    render(
+      <Card>
+        <Card.Image src={src} alt={alt} />
+      </Card>
+    );
+
+    expect(screen.getByAltText(alt)).toHaveAttribute('src', src);
   });
 });
